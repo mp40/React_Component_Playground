@@ -6,12 +6,12 @@ class App extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            modalButton: false
+            showModal: false
         };
     }
 
     toggleModal(){
-        this.setState({modalButton: !this.state.modalButton})
+        this.setState({showModal: !this.state.showModal})
     }
 
     render(){
@@ -20,7 +20,7 @@ class App extends React.Component{
                 <button onClick={this.toggleModal.bind(this)}>
                     Click To Render Modal
                 </button>
-                {this.state.modalButton ? <Modal/> : null}
+                {this.state.showModal ? <Modal/> : null}
             </div>
         )
     }
