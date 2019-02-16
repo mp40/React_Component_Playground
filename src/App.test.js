@@ -9,6 +9,10 @@ describe('rendering components',()=>{
     ReactDOM.render(<App />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
+  it('should not render the Modal component on start',()=>{
+    const wrapper = mount(<App/>)
+    expect(wrapper.text()).not.toContain('Modal displayed')
+  })
 })
 
 describe('the modal button',()=>{
