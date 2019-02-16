@@ -1,8 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
+import Modal from "./Modal"
  
 const App = ()=>{
-    return null
+    return (
+        <Modal/>
+    )
 }
 
 export default App;
