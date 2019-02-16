@@ -4,7 +4,13 @@ import Modal from "./Modal"
  
 const App = ()=>{
     return (
-        <Modal/>
+        <div>
+            <button>
+                Click To Render Modal
+            </button>
+            <Modal/>
+        </div>
+        
     )
 }
 
