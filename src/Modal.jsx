@@ -4,8 +4,10 @@ import './Modal.css';
 
 const Modal = (props)=>{
     return (
-        <div className="modal">
-            Modal displayed
+        <div className="modalContainer">
+            <div className="modal">
+                Modal displayed
+            </div>
         </div>
     )
 }
