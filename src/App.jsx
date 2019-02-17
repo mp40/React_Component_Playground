@@ -40,7 +40,9 @@ class App extends React.Component{
                     THIS IS THE MAIN BODY HERER HERE HERE HERE HERE HERE
                     </p>
                 </div>
-                {this.state.showModal ? <Modal/> : null}
+                {this.state.showModal ? <Modal
+                    toggleModal = {this.toggleModal.bind(this)}
+                /> : null}
             </div>
         )
     }

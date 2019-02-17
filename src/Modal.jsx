@@ -7,6 +7,9 @@ const Modal = (props)=>{
         <div className="modalContainer">
             <div className="modal">
                 Modal displayed
+                <button id="closeModal" onClick={props.toggleModal}>
+                    Close Modal
+                </button>
             </div>
         </div>
     )
